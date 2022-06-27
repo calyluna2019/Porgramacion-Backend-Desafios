@@ -1,0 +1,14 @@
+<hr>    
+{{#if messages }}
+    <div class="">
+        {{#each messages}}
+            <p>
+                <b class="text-primary">{{this.email}}</b> 
+                [{{this.date}}]
+                : 
+                <i class="text-success">{{this.message}}</i></p>
+        {{/each}}
+    </div>
+{{else}}
+    <h3 class="alert alert-warning">No hay Mensajes</h3>
+{{/if}}
